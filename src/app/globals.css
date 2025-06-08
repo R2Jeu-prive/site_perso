@@ -1,26 +1,51 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-*: initial;
+  --color-white: #f5f5f5;
+  --color-gray: #262626;
+  --color-gray: #262626;
+  --color-gray-dark: #1a1a1a;
+  --color-black: #0a0a0a;
+  --color-pink-light: #ffccde;
+  --color-pink: #e60052;
+  --color-pink-dark: #a7003a;
+
+  --font-roboto: "Roboto", sans-serif; 
+  --font-montserrat: "Montserrat", sans-serif; 
+  --font-kaushan: "Kaushan Script", sans-serif;
+  --font-passion: "Passion One", sans-serif;
+  --font-amfibia: var(--font-amfibia);
+
+  --inset-shadow-deep: inset 0px 0px 3em #00000080;
+
+  --filter-white: brightness(0) saturate(100%) invert(100%) sepia(79%) saturate(81%) hue-rotate(260deg) brightness(114%) contrast(92%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  white-space: pre-line; /* Allows for line breaks in translation texts */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html{
+  overflow-x: hidden;
+  color-scheme: dark; /* makes the scroll bar dark, might have side effects */
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-gray);
+}
+
+main{
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
 }
