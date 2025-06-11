@@ -3,7 +3,7 @@ import '@/app/globals.css';
 import localFont from 'next/font/local'
  
 const amfibia = localFont({
-  src: "../../public/fonts/Amfibia-Black.woff2",
+  src: "../../public/fonts/Amfibia-Black.ttf",
   variable: '--font-amfibia',
   display: 'swap',
 })

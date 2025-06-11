@@ -13,10 +13,8 @@
   --color-black: #0a0a0a;
 
   --color-brown: #1b1014;
-  --color-orange: #b6560a;
-  --color-yellow: #b57f27;
-  --color-blue: #4580a1;
-  --color-blue-light: #94afc2;
+  --color-orange: #d57f3a;
+  --color-blue: #79b2d3;
 
   --font-lexend: "Lexend", sans-serif; 
   --font-roboto: "Roboto", sans-serif; 
@@ -49,5 +47,4 @@ body{
 main{
   width: 100%;
   margin: 0px;
-  overflow: hidden;
 }

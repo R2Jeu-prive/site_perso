@@ -10,15 +10,22 @@ export default function HomePage() {
 
   return (
     <main className='flex flex-col'>
-      <figure className='w-full absolute top-[-20vh] -z-1 pt-[20vh] overflow-visible'>
-        <Image src={bg} className="size-full object-cover absolute top-0" alt=''/>
+      <div className='w-full absolute top-[-20vh] -z-1 pt-[20vh] overflow-visible'>
+        <Image src={bg} priority={true} className="size-full object-cover absolute top-0" alt=''/>
         <div className='size-full bg-white/10 absolute top-0'></div>
-        <div className='bg-gray/10 backdrop-blur-sm flex flex-row justify-between m-0 p-8 my-6 w-full'>
-          <span className='font-loxend text-4xl w-min text-white'>Développeur Freelance</span>
+        <div className='bg-gray/20 backdrop-blur-sm flex flex-row justify-between m-0 p-4 my-6 w-full'>
+          <span className='font-loxend text-2xl w-min text-white'>Développeur Freelance</span>
           <span className='font-poiret text-2xl text-right text-white h-min self-end'>Pierre Gueguen</span>
         </div>
-      </figure>
-      <figure className='w-full h-48 bg-'></figure>
+      </div>
+      <div className='w-full h-36 shadow-md/30 shadow-black/100'></div>
+      <section className='flex flex-col items-center px-8'>
+        <span className='font-loxend text-gray border-1 border-black rounded-lg px-2 w-fit mt-16'>Développement logiciel & web</span>
+        <span className='font-loxend font-bold text-4xl text-[#333] text-center mt-4'>Des solutions sur mesure, pensées pour durer</span>
+        <span className='font-loxend text-gray text-center mt-8'>Je conçois des sites et des applications web qui allient performance, clarté et efficacité.</span>
+        <button className='bg-orange px-6 py-4 text-white font-loxend text-xl font-bold rounded-2xl shadow-md/70 shadow-orange cursor-pointer mt-8'>Discutons de votre projet</button>
+      
+      </section>
       {/*<div className='size-[50vw] overflow-hidden relative drop-shadow-gray drop-shadow-2xl'>
         <Image src={profile} className='scale-200 translate-y-[20vw] translate-x-[1vw]' alt="pierre gueguen"/>
       </div>
