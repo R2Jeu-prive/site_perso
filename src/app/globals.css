@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import 'tailwindcss';
 
@@ -11,14 +11,16 @@
   --color-gray: #262626;
   --color-gray-dark: #1a1a1a;
   --color-black: #0a0a0a;
-  --color-pink-light: #ffccde;
-  --color-pink: #e60052;
-  --color-pink-dark: #a7003a;
 
+  --color-brown: #1b1014;
+  --color-orange: #b6560a;
+  --color-yellow: #b57f27;
+  --color-blue: #4580a1;
+  --color-blue-light: #94afc2;
+
+  --font-lexend: "Lexend", sans-serif; 
   --font-roboto: "Roboto", sans-serif; 
-  --font-montserrat: "Montserrat", sans-serif; 
-  --font-kaushan: "Kaushan Script", sans-serif;
-  --font-passion: "Passion One", sans-serif;
+  --font-poiret: "Poiret One", sans-serif;
   --font-amfibia: var(--font-amfibia);
 
   --inset-shadow-deep: inset 0px 0px 3em #00000080;
@@ -32,7 +34,7 @@
 
 html{
   overflow-x: hidden;
-  color-scheme: dark; /* makes the scroll bar dark, might have side effects */
+  color-scheme: light; /* makes the scroll bar dark, might have side effects */
 }
 
 body{
@@ -41,7 +43,7 @@ body{
   padding: 0px;
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--color-gray);
+  background-color: var(--color-white);
 }
 
 main{
